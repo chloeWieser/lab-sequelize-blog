@@ -11,13 +11,14 @@ module.exports = (sequelize, DataTypes) => {
      */
     static associate(models) {
       // define association here
-      models.users.hasMany(models.blogs, {foreignKey:'userID'})   //BASED ON SEQUELISE SLIDE 31 TEMPLATE Project.hasMany(User, {as: 'Workers'})
+      models.users.hasMany(models.blogs, {foreignKey: 'userID'})
     }
   }
   users.init({
     firstName: DataTypes.STRING,
     lastName: DataTypes.STRING,
-    email: DataTypes.STRING
+    email: DataTypes.STRING,
+    isPublished: DataTypes.BOOLEAN
   }, {
     sequelize,
     modelName: 'users',

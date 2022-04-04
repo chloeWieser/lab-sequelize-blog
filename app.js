@@ -3,7 +3,7 @@ const app = express();
 const helmet = require('helmet');
 const port = 3000;
 
-const db = require('/models') //links to index 
+// const db = require('/models') //links to index 
 
 
 
