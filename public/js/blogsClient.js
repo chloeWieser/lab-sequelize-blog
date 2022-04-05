@@ -17,7 +17,7 @@ const setup = async () => {
 
     //create div tag with the db blog items  
     html+=`
-    <div class="media">
+    <div class="media mb-5">
         <img class="mr-3 img-fluid post-thumb d-none d-md-flex" src="/images/blog/blog-post-thumb-7.jpg" alt="image">
         <div class="media-body">
             <h3 class="title mb-1"><a href="/blog-post/${blogEntry.id}">${blogEntry.title}</a></h3>
