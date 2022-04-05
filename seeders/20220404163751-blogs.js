@@ -13,14 +13,20 @@ module.exports = {
     */
 
      await queryInterface.bulkInsert('blogs', [{
-      title: 'John Doe',
+      title: 'First Blog Post',
       body: 'This is my first ever blog post, like...ever.',
-      isPublished: false
+      userID: 1,
+      isPublished: false,
+      createdAt: new Date(),
+      updatedAt: new Date()
     }, 
     {
-      title: 'John Doe',
-      body: 'This is my first ever blog post, like...ever.',
-      isPublished: false
+      title: 'Listen up',
+      body: 'I have so much to tell you.',
+      userID: 2,
+      isPublished: false,
+      createdAt: new Date(),
+      updatedAt: new Date()
     }
     ], {});
  

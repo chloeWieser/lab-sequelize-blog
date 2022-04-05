@@ -19,13 +19,17 @@ module.exports = {
       firstName: 'John',
       lastName: 'Doe',
       email: 'jd@email.com',
-      isPublished: false
+      isPublished: false,
+      createdAt: new Date(),
+      updatedAt: new Date()
     }, 
     {
       firstName: 'Mary',
       lastName: 'Williams',
       email: 'mw@email.com',
-      isPublished: true
+      isPublished: true,
+      createdAt: new Date(),
+      updatedAt: new Date()
     }
     ], {});
   },

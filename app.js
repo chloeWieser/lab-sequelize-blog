@@ -11,6 +11,10 @@ app.use(express.static('public'));
 app.use(helmet())
 app.set('view engine', 'ejs');
 
+//body parser
+app.use(express.urlencoded({extended: false}))
+app.use(express.json()) 
+
 //routes 
 app.use(require('./routes/index.js'))
 app.use(require('./routes/blog-post.js'))
